@@ -31,15 +31,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-
-                <a href="{{ baseUrl('/') }}" class="logo">
-                    @if(setting('app-logo', '') !== 'none')
-                        <img class="logo-image" src="{{ setting('app-logo', '') === '' ? baseUrl('/logo.png') : baseUrl(setting('app-logo', '')) }}" alt="Logo">
-                    @endif
-                    @if (setting('app-name-header'))
-                        <span class="logo-text">{{ setting('app-name') }}</span>
-                    @endif
+            
+                <a href="{{ baseUrl('/') }}" class="navbar-brand">
+                                        <div class="brand-icon"></div>
+                                    <div class="brand-title">
+                        <span class="brand-text">{{ setting('app-name') }}</span>
+                    </div>
                 </a>
+
             </div>
             <div class="col-sm-6">
                 <div class="float right">
